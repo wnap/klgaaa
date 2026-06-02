@@ -22,7 +22,7 @@
 
         /* Переменные для темной темы */
         body.dark-theme {
-            --bg-color: #000000;
+            --bg-color: #121214; /* Тёмно-тёмно-серый вместо чисто чёрного */
             --text-color: #f5f5f7;
             --secondary-text: #a1a1a6;
             --card-bg: #1c1c1e;
@@ -65,7 +65,7 @@
             overflow: hidden;
         }
 
-        /* Кнопка смены темы (ПЕРЕНЕСЕНА НАПРАВО ВНИЗ) */
+        /* Кнопка смены темы (справа снизу) */
         .theme-toggle {
             position: fixed;
             bottom: 24px;
@@ -264,7 +264,7 @@
     </div>
 
     <div id="screen-game" class="screen">
-        <h1 id="t-game-active">Playing</h1>
+        <h1>Playing</h1>
         <div id="timer-display">05:00</div>
         <button onclick="toggleTimer()" id="btn-timer-toggle" class="btn-secondary">Pause</button>
         <button onclick="endGame()" id="t-end" style="margin-top: 15px; background: transparent; color: var(--spy-color); border: 1px solid var(--spy-color);">End</button>
