@@ -1,4 +1,4 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -60,7 +60,7 @@
         /* Кнопка смены темы */
         .theme-toggle {
             position: fixed;
-            top: 20px;
+            bottom: 20px;
             right: 20px;
             width: 44px;
             height: 44px;
@@ -265,7 +265,6 @@
     </div>
 
     <script>
-        // Инициализация данных (укорочено для примера, но темы сохранены)
         const rawData = {
             ru: {
                 "Места": "Банк,Казино,Больница,Отель,Ресторан,Школа,Университет,Аэропорт,Метро,Супермаркет,Театр,Музей,Цирк,Бассейн,Пляж,Стадион,Пожарная часть,Космос,Парк,Полиция,Спа",
