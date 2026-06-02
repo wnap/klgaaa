@@ -1,4 +1,5 @@
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -56,7 +57,7 @@
             overflow: hidden;
         }
 
-        /* Кнопка смены темы (справа снизу) */
+        /* Кнопка смены темы */
         .theme-toggle {
             position: fixed;
             bottom: 20px;
