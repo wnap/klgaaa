@@ -16,12 +16,6 @@
       color: #fff;
     }
 
-    /* Скрыть заголовок GitHub Pages */
-    header, .site-header, .page-title { display: none !important; }
-  </style>
-</head>
-
-
     .calc {
       width: 320px;
       background: #111;
