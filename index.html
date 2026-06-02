@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -34,13 +34,22 @@
             --spy-color: #ff453a;
         }
 
-        /* Общие стили с плавным переходом */
+        /* Убираем тяжелую анимацию со всех элементов для плавной работы на смартфонах */
         * {
             box-sizing: border-box;
-            transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
-                        color 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
-                        border-color 0.5s ease, 
-                        box-shadow 0.5s ease;
+        }
+
+        /* Оставляем плавный переход только для крупных блоков (фоны и карточки) */
+        body, .screen, .theme-toggle {
+            transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                        border-color 0.4s ease, 
+                        box-shadow 0.4s ease;
+        }
+
+        /* Для всех текстовых элементов и кнопок делаем смену цвета мгновенной (0.1с), 
+           чтобы убрать лаги и задержки на мобильных устройствах */
+        h1, h2, h3, p, label, select, input, button, .word-item, .card-word {
+            transition: color 0.1s ease;
         }
 
         body {
@@ -60,7 +69,7 @@
         /* Кнопка смены темы */
         .theme-toggle {
             position: fixed;
-            bottom: 20px;
+            top: 20px;
             right: 20px;
             width: 44px;
             height: 44px;
